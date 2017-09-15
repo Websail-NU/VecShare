@@ -1,5 +1,16 @@
 # VecShare: Framework for Sharing Word Embeddings
 
+## Maintaining www.vecshare.org and the library:
+* Indexer runs every 2hrs on the downey-n1 server on Jared's account (See poll.py)
+* Website is linked to the README on the original repo (https://github.com/JaredFern/VecShare)
+* Use the setup.py file if updating the Python Library on PyPi, Make sure to update the version number
+ 
+## Future goals:
+* Multilingual, sub-word Embeddings
+* Combined & Synthesized Embeddings
+* Different Evaluations for Different Tasks
+* Most similar word vectors
+
 ## About VecShare
 The vecshare python library for word embedding query, selection and download. The vecshare python library uses indexers to regularly poll the data.world datastore for uploaded embeddings, record associated metadata, and generate lightweight signatures representing each uploaded embedding. Users can select embeddings for use by specifying the name of the desired embedding or using provided methods to compare their corpus against indexed signatures and extracting the embedding most similar to the target corpus.
 
